@@ -28,4 +28,45 @@ window.addEventListener('DOMContentLoaded', event => {
     
 
 });
+ 
+// Função para gerenciar a URL atual do site
+function gerenciarURL() {
+    // Função para obter parâmetros da URL atual
+    function obterParametros() {
+        const params = new URLSearchParams(window.location.search);
+        let parametros = {};
+        for (let [key, value] of params) {
+            parametros[key] = value;
+        }
+        return parametros;
+    }
 
+    // Função para redirecionar para outra página
+    function redirecionarPara(url) {
+        window.location.href = url;
+    }
+
+    // Função para atualizar a página atual
+    function atualizarPagina() {
+        window.location.reload();
+    }
+
+    return {
+        obterParametros,
+        redirecionarPara,
+        atualizarPagina
+    };
+}
+
+// Exemplo de uso:
+const gerenciadorURL = gerenciarURL();
+
+// Exemplo 1: Obter parâmetros da URL atual
+const parametrosAtuais = gerenciadorURL.obterParametros();
+console.log(parametrosAtuais);
+
+// Exemplo 2: Redirecionar para outra página
+gerenciadorURL.redirecionarPara('/outra-pagina');
+
+// Exemplo 3: Atualizar a página atual
+gerenciadorURL.atualizarPagina();
