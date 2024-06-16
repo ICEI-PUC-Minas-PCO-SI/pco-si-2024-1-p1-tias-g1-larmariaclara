@@ -58,15 +58,15 @@ function gerenciarURL() {
     };
 }
 
-// Exemplo de uso:
-const gerenciadorURL = gerenciarURL();
+// // Exemplo de uso:
+// const gerenciadorURL = gerenciarURL();
 
-// Exemplo 1: Obter parâmetros da URL atual
-const parametrosAtuais = gerenciadorURL.obterParametros();
-console.log(parametrosAtuais);
+// // Exemplo 1: Obter parâmetros da URL atual
+// const parametrosAtuais = gerenciadorURL.obterParametros();
+// console.log(parametrosAtuais);
 
-// Exemplo 2: Redirecionar para outra página
-gerenciadorURL.redirecionarPara('/outra-pagina');
+// // Exemplo 2: Redirecionar para outra página
+// gerenciadorURL.redirecionarPara('/outra-pagina');
 
-// Exemplo 3: Atualizar a página atual
-gerenciadorURL.atualizarPagina();
+// // Exemplo 3: Atualizar a página atual
+// gerenciadorURL.atualizarPagina();
