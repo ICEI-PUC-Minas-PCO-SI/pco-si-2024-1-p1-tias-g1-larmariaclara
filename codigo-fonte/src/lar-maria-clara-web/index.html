@@ -12,25 +12,6 @@
     <link href="css/styles.css" rel="stylesheet" />
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
 
-    <script>
-        
-        function carregarConteudo(url, elemento) {
-            fetch(url)
-            .then(response => response.text())
-            .then(text => {
-                document.getElementById(elemento).innerHTML = "";
-                document.getElementById(elemento).innerHTML = text;
-            });
-        }
-        
-        carregarConteudo('paginas/cabecalho.html', 'idCabecalho');
-        carregarConteudo('paginas/menu-lateral.html', 'idMenuLateral');
-        // carregarConteudo('paginas/dashboard.html', 'idMain');
-        carregarConteudo('paginas/footer.html', 'idFooter');
-        
-        
-    </script>
-
 </head>
 
 <body class="sb-nav-fixed">
@@ -604,7 +585,6 @@
                             </div>
                         </div>
                     </div>
-                    
                 </div>    
             </main>
             <div id="idFooter">
@@ -618,6 +598,7 @@
     <script src="assets/demo/chart-bar-demo.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
     <script src="js/datatables-simple-demo.js"></script>
+
 </body>
 
 </html>
