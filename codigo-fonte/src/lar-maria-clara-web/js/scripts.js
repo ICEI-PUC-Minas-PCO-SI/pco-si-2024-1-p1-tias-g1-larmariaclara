@@ -1,4 +1,11 @@
+
 window.addEventListener('DOMContentLoaded', event => { 
+
+    // Verificar se há um token ou outra indicação de login no localStorage
+    if (localStorage.getItem('loggedIn') === 'false') {
+        // O usuário não está logado, exibir a tela de login
+        showLoginPage();
+    }
 
     // Toggle the side navigation
     const sidebarToggle = document.body.querySelector('#sidebarToggle');
@@ -21,6 +28,38 @@ window.addEventListener('DOMContentLoaded', event => {
     carregarConteudo('paginas/footer.html', 'idFooter');
 
 });
+
+document.getElementById('logoutButton').addEventListener('click', function() {
+    localStorage.removeItem('loggedIn');
+    showLoginPage(); // Voltar para a tela de login
+});
+
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Impede o envio padrão do formulário
+
+    // Verificar as credenciais (simulação de sucesso)
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    // Simulação simples de autenticação (substitua com lógica real)
+    if (username === 'usuario' && password === 'senha') {
+        // Se as credenciais estiverem corretas, marcar o usuário como logado
+        localStorage.setItem('loggedIn', 'true');
+        showMainPage(); // Mostrar a página principal
+    } else {
+        alert('Credenciais inválidas. Tente novamente.');
+    }
+});
+
+function showLoginPage() {
+    document.getElementById('loginPage').style.display = 'block';
+    document.getElementById('mainPage').style.display = 'none';
+}
+
+function showMainPage() {
+    document.getElementById('loginPage').style.display = 'none';
+    document.getElementById('mainPage').style.display = 'block';
+}
 
 async function carregarMenuTables() {
     await carregarConteudo('tables.html', 'idMain');
