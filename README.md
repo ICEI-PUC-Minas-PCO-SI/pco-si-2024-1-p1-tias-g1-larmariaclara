@@ -1,40 +1,80 @@
-# TÍTULO DO PROJETO
+# Sistema de Controle Financeiro para o Lar Maria Clara
 
-`CURSO`
+`Sistemas de Informação`
 
-`DISCIPLINA`
+`Trabalho Interdisciplinar: Aplicações para Sustentabilidade`
 
-`SEMESTRE`
+`2024-01`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Bem-vindo ao repositório do Sistema de Controle Financeiro para o Lar Maria Clara. Este projeto foi desenvolvido como parte do Trabalho Interdisciplinar para Aplicação para Sustentabilidade da Faculdade PUC-MG. O objetivo deste sistema é fornecer uma ferramenta eficaz para a gestão financeira do Lar Maria Clara, uma instituição que acolhe crianças em situação de vulnerabilidade social.
 
-## Integrantes
+## Sobre o Projeto
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+O sistema visa auxiliar o Lar Maria Clara no controle de suas finanças, permitindo o registro de despesas, receitas e doações. Além disso, a aplicação gera relatórios financeiros que facilitam a análise e a tomada de decisões. Com isso, buscamos promover uma gestão transparente e eficiente dos recursos, garantindo maior sustentabilidade para a instituição.
 
-## Orientadora
+## Tecnologias Utilizadas
 
-* Maria Inês Lage de Paula
+### Front-end
+- **CSS**
+- **HTML**
+- **JavaScript**
 
-## Instruções de utilização
+### Back-end
+- **Node.js**
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+### Banco de Dados
+- **MySQL**
 
-# Documentação
+### Outras Ferramentas
+- **Git**
+- **GitHub**
+- **Docker**
 
-<ol>
-<li><a href="documentos/01-Especificação do Projeto.md"> Especificação do Projeto</a></li>
-<li><a href="documentos/02-Projeto de Interface.md"> Projeto de Interface</a></li>
-<li><a href="documentos/03-Implantação.md"> Implantação</a></li>
-</ol>
+## Como Contribuir
 
-# Código
+Se você deseja contribuir para este projeto, siga as instruções abaixo:
 
-<li><a href="codigo-fonte/README.md"> Código Fonte</a></li>
+1. Faça um fork deste repositório.
+2. Crie uma nova branch:
+    ```bash
+    git checkout -b feature/nova-funcionalidade
+    ```
+3. Faça commit das suas alterações:
+    ```bash
+    git commit -am 'Adiciona nova funcionalidade'
+    ```
+4. Faça push para a branch:
+    ```bash
+    git push origin feature/nova-funcionalidade
+    ```
+5. Crie um novo Pull Request.
 
-# Apresentação
+## Equipe de Desenvolvimento
 
-<li><a href="apresentacao/README.md"> Apresentação da solução</a></li>
+- **Hudson da Silva Carlos**
+- **Caio Vinícius Braga**
+- **Marco Túlio Reis Silva**
+- **Alan Gurgel**
+
+## Professores Responsáveis
+
+- **Maria Ines Lage de Paula**
+
+## Instruções de Utilização
+
+Para utilizar o sistema, siga os passos abaixo:
+
+1. Clone este repositório:
+    ```bash
+    git clone https://github.com/seu-usuario/seu-repositorio.git
+    ```
+2. Instale as dependências:
+    ```bash
+    npm install
+    ```
+3. Configure o banco de dados no arquivo `.env`.
+4. Inicie a aplicação:
+    ```bash
+    npm start
+    ```
+
