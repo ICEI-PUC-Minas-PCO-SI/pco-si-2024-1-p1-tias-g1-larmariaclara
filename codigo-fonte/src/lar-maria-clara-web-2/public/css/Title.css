@@ -1,0 +1,14 @@
+.t-title span{
+    font-size: 1.1em;
+    color: #676476;
+}
+
+.t-title p{
+    margin-top: 4px;
+    font-size: 0.9em;
+    color: #bfbec5;
+}
+
+.t-title.mt20{
+    font-size: 0.9em;
+}

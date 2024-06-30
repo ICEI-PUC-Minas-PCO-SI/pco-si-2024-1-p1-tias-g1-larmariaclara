@@ -1,0 +1,10 @@
+module.exports.NOERROR = { error: '' }
+module.exports.ACESSO_NEGADO = { error: 'Acesso negado' }
+module.exports.CONTA_EXISTENTE = { error: 'Essa conta já existe' }
+module.exports.CONTA_ENEXISTENTE = { error: 'Essa conta não foi encontrada.' }
+module.exports.EMAIL_INVALIDO = { error: 'E-mail invalido' }
+module.exports.SENHA_INVALIDA = { error: 'Senha invalida' }
+module.exports.NOME_INVALIDA = { error: 'Nome invalido' }
+module.exports.OPCAO_INVALIDA = { error: 'Opção invalida' }
+module.exports.PREENCHA_TUDO = { error: 'Preencha todos os campos' }
+module.exports.ARQUIVO_VAZIO = { error: 'Imagem obrigatoria' }

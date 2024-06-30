@@ -1,0 +1,57 @@
+<div id="ITEM_APP">
+    <div class="f b bg-white hd70">
+        <div class="f">
+            <button class="button-white">Excel</button>
+            <button class="button-white ml10" onclick="updateit('mo')">Editar</button>
+        </div>
+        <div class="f">
+            <input type="text" name="search" placeholder="Nome Fantasia" class="w-auto ml10">
+            <button class=" ml10" onclick="mr_search('/res/read', 'moradores', pit('[name=search]').value(), Contasbancarias)">Pesquisar</button>
+        </div>
+    </div>
+    <div class="bg-white mt10">
+        <table>
+            <tr>
+                <th><input type="checkbox"></th>
+                <th>Conta</th>
+                <th>Agencia</th>
+                <th>Banco</th>
+            </tr>
+        </table>
+        <div class="column-2a f b ac mt15 fs0.8">
+            <div class="p-item">
+                <p>Página 1 de 1</p>
+            </div>
+            <div class="p-item f far">
+                <a href="#">1</a>
+                <a href="#" class="ml10">2</a>
+                <a href="#" class="ml10">3</a>
+                <a href="#" class="ml10">4</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="ITEM_NEW" class="h bg-white">
+    <h3 class="manager-item update-item">Atualizar conta</h3>
+    <div class="form-group mt10">
+        <p>Conta</p>
+        <input type="text" name="moConta">
+    </div>
+    <div class="t2 f b mt10">
+        <div class="form-group ">
+            <p>Agencia</p>
+            <input type="text" name="moAgencia">
+        </div>
+        <div class="form-group ">
+            <p>Banco</p>
+            <input type="text" name="moBanco">
+        </div>
+    </div>
+
+    <div class="form-group mt10 f b ac">
+        <button class="busytype manager-item update-item" data-text="Enviar" onclick="mr('/res/update', 'moradores')">Atualizar</button>
+        <a href="#" onclick="Next('#ITEM_APP', '#ITEM_NEW')">Cancelar</a>
+    </div>
+</div>
+<input type="hidden" name="prefix" value="mo">
+<input type="hidden" name="moUpdated_hash">

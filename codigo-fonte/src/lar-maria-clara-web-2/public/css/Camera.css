@@ -1,0 +1,22 @@
+.user-photo{
+    width: 100px;
+    margin: auto;
+    position: relative !important;
+}
+
+.camera{
+    font-size: 1.11em !important;
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    background-color: #ecf0f1;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    color: #34495e;
+    cursor: pointer;
+}

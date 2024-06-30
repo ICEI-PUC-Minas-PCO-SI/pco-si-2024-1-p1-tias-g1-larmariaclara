@@ -1,0 +1,49 @@
+input[type="text"], input[type="password"], input[list], input[type="date"], .form-group input[type="file"], button, textarea, select{
+    border: 1px solid #e0e2e4;
+    padding: 15px;
+    border-radius: 4px;
+    outline-color: #0d6efd ;
+    width: 100%;
+}
+
+input[type="file"]{
+    padding: 12px !important;
+}
+
+.form-group input[type="checkbox"]{
+    margin-right: 10px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group input[type="file"],
+.form-group input[list], 
+.form-group select, 
+.form-group input[type="date"],
+.form-group textarea{
+    margin-top: 5px;
+}
+
+button{
+    color: #fff;
+    padding: 10px !important;
+    background-color: #0d6efd;
+    border: 1px solid #0d6efd;
+}
+
+.f2 .form-group{
+	width: 48%
+}
+
+.busy{
+    pointer-events: none !important;
+    color: #003DE4;
+    border: 1px solid #003DE4;
+    font-style: italic;
+    font-weight: bold;
+    background-color: #fff !important;
+}
+
+.input-error {
+    border: 1px solid #e74c3c !important;
+}

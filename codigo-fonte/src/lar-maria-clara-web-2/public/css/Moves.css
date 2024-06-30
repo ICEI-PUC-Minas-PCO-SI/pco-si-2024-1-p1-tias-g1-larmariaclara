@@ -1,0 +1,21 @@
+#move .icon{
+    font-size: 1.8em;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: absolute;
+    top: -20px;
+}
+
+#move .item{
+    position: relative;
+}
+
+
+#move p{
+    color: #7f8c8d;
+    font-size: 0.8em;
+}

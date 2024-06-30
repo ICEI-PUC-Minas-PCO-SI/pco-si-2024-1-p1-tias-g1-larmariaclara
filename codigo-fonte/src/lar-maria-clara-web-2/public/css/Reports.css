@@ -1,0 +1,13 @@
+.item-manager{
+    padding: 10px;
+    border-radius: 8px;
+    color: #003DE4;
+    border: 1px solid #003DE4;
+    cursor: pointer;
+}
+
+.item-manager.active{
+    color: #fff;
+    background-color: #003DE4;
+    border: 1px solid #003DE4;
+}

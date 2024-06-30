@@ -1,0 +1,28 @@
+{
+    "config": {
+        "client": "mysql2",
+        "connection": {
+            "host": "127.0.0.1",
+            "port": 3306,
+            "user": "root",
+            "password": "",
+            "database": "financeiro"
+        }
+    },
+    "root": {
+        "CREATE": ["moradores", "users", "categorias"], 
+        "UPDATE": ["moradores", "users", "categorias"], 
+        "READ": ["moradores", "users", "categorias"], 
+        "REMOVE": ["moradores", "users", "categorias"]
+    },
+    "admin": {
+        "CREATE": ["moradores", "categorias"], 
+        "UPDATE": ["moradores", "categorias"], 
+        "READ": ["moradores", "categorias"], 
+        "REMOVE": ["moradores", "categorias"]
+    },
+    "analista": {
+        "CREATE": [], "UPDATE": [], 
+        "READ": ["moradores", "categorias"], "REMOVE": []
+    }
+}

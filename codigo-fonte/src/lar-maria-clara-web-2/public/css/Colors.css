@@ -1,0 +1,25 @@
+.bg-white{
+    padding: 15px;
+    box-shadow: 0 0px 5px #d7d9db;
+    background-color: #fff;
+}
+
+.bg-blue{
+    color: #fff;
+    background-color: #3498db;
+}
+
+.bg-yellow{
+    color: #fff;
+    background-color: #f1c40f;
+}
+
+.bg-green{
+    color: #fff;
+    background-color: #2ecc71;
+}
+
+.bg-red{
+    color: #fff;
+    background-color: #e74c3c;
+}

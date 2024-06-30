@@ -1,0 +1,59 @@
+.menu-content p{
+    margin-left: 15px;
+}
+
+.menu .menu-title p{
+    color: #bfbec5;
+    font-size: 0.75em;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.menu .item{
+    cursor: pointer;
+    padding: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+}
+
+.menu .menu-content p{
+    color: #a0aec0
+}
+
+.menu .menu-content span{
+    color: #6e93b8
+}
+
+.menu .item.active{
+    background-color: #003DE4
+}
+
+.menu .item.active span{
+    color: #fff
+}
+
+.menu .item.active p{
+    color: #fff
+}
+
+.menu .item:hover{
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.menu-bottom{
+    position: absolute;
+    bottom: 10px;
+    width: calc(100% - 30px);
+    border: 1px solid #003DE4;
+    border-radius: 8px;
+}
+
+.menu-bottom p{
+    color: #003DE4 !important;
+}
+
+.ham-menu{
+    border: 1px solid #ccc;
+}

@@ -1,0 +1,24 @@
+.search{
+    display: flex;
+    align-items: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.search input{
+    padding-left: 20px;
+    font-size: 0.9em;
+    outline: none !important;
+}
+
+.search img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.search input{
+    border: 0 !important;
+    background-color: #fff;
+}
+

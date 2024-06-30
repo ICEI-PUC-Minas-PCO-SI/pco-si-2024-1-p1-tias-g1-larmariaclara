@@ -1,0 +1,20 @@
+.drop-menu{
+    position: absolute;
+    background-color: #fff;
+    top: 30px;
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 4px;
+    width: 400px;
+}
+
+.drop-menu p{
+    padding: 10px;
+    padding-left: 20px;
+    border-radius: 4px;
+    padding-right: 20px;
+}
+
+.drop-menu p:hover{
+    background-color: #dedede;
+    cursor: pointer;
+}

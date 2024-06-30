@@ -1,0 +1,89 @@
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<div class="title">
+    <h3># Dashboard</h3>
+    <p>Dashboard</p>
+</div>
+<div class="f b column-4 mt10" id="cards">
+    <div class="item bg-blue">
+        <p>Primary Card</p>
+        <div class="f b ac">
+            <a href="#">View Details</a>
+            <span class="icon-cheveron-right"></span>
+        </div>
+    </div>
+    <div class="item bg-yellow">
+        <p>Warning Card</p>
+        <div class="f b ac">
+            <a href="#">View Details</a>
+            <span class="icon-cheveron-right"></span>
+        </div>
+    </div>
+    <div class="item bg-green">
+        <p>Success Card</p>
+        <div class="f b ac">
+            <a href="#">View Details</a>
+            <span class="icon-cheveron-right"></span>
+        </div>
+    </div>
+    <div class="item bg-red">
+        <p>Danger Card</p>
+        <div class="f b ac">
+            <a href="#">View Details</a>
+            <span class="icon-cheveron-right"></span>
+        </div>
+    </div>
+</div>
+<div class="column-2 f b mt20">
+    <div class="item">
+        <canvas id="LINECHART"></canvas>
+    </div>
+    <div class="item">
+        <canvas id="BARCHART"></canvas>
+    </div>
+</div>
+
+<script>
+    const BARCHART = document.getElementById('BARCHART');
+    new Chart(BARCHART, {
+        type: 'bar',
+        data: {
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            datasets: [{
+                label: '# of Votes',
+                data: [12, 19, 3, 5, 2, 3],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    })
+
+
+    const LINECHART = document.getElementById('LINECHART');
+    new Chart(LINECHART, {
+        type: 'line',
+        data: {
+            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+            datasets: [{
+                label: 'My First Dataset',
+                data: [65, 59, 80, 81, 56, 55, 40],
+                fill: false,
+                borderColor: 'rgb(75, 192, 192)',
+                tension: 0.1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    })
+  </script>

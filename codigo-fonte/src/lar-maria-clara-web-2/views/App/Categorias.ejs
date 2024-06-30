@@ -1,0 +1,48 @@
+<div id="ITEM_APP">
+    <div class="f b bg-white hd70">
+        <div class="f">
+            <button class="button-white" type="button" onclick="Next('#ITEM_NEW', '#ITEM_APP', '.new-item')">Inserir</button>
+            <button class="button-white ml10" type="button"  onclick="updateit('ca')">Editar</button>
+            <button class="button-white ml10" type="button" onclick="removeit('categorias')">Excluir</button>
+        </div>
+        <div class="f">
+            <input type="text" name="search" placeholder="Nome Fantasia" class="w-auto ml10">
+            <button class=" ml10" onclick="mr_search('/res/read', 'categorias', pit('[name=search]').value(), Categorias)">Pesquisar</button>
+        </div>
+    </div>
+    <div class="bg-white mt10">
+        <table>
+            <tr>
+                <th><input type="checkbox"></th>
+                <th>Nome</th>
+            </tr>
+        </table>
+        <div class="column-2a f b ac mt15 fs0.8">
+            <div class="p-item">
+                <p>Página 1 de 1</p>
+            </div>
+            <div class="p-item f far">
+                <a href="#">1</a>
+                <a href="#" class="ml10">2</a>
+                <a href="#" class="ml10">3</a>
+                <a href="#" class="ml10">4</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="ITEM_NEW" class="h bg-white">
+    <h3 class="h manager-item new-item">Cadastro de categorias</h3>
+    <h3 class="h manager-item update-item">Atualiza categoria</h3>
+    <div class="form-group mt10">
+        <p>Nome da categória</p>
+        <input type="text" name="caCategoria">
+    </div>
+    <div class="form-group mt10 f b ac">
+        <button class="busytype manager-item new-item" data-text="Enviar" onclick="mr('/res/create', 'categorias')">Enviar</button>
+        <button class="busytype h manager-item update-item" data-text="Enviar" onclick="mr('/res/update', 'categorias')">Atualizar</button>
+        <a href="#" onclick="Next('#ITEM_APP', '#ITEM_NEW')">Cancelar</a>
+    </div>
+</div>
+<input type="hidden" name="prefix" value="ca">
+<input type="hidden" name="migrate" value="categorias">
+<input type="hidden" name="caUpdated_hash">

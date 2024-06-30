@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link async rel="stylesheet" href="/icomoon/style.css">
+
+    <script src="/build/app.min.js"></script>
+    <link rel="stylesheet" href="/build/app.min.css">
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
+    <title></title>
+</head>
+<body>
+    <form id="form" enctype="multipart/form-data" callback="<%= callback %>">
+        <%- include(appTemplate) %>
+        <input type="hidden" name="page" value="1">
+    </form>
+    <div id="SYSTEM_MESSAGE" class="h f sm">
+        <div class="sm-left">
+            <img src="">
+        </div>
+        <div class="sm-right">
+            <p></p>
+        </div>
+        <span class="icon-close"></span>
+    </div>
+    <div id="CREATE_LOAD" class="h">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</body>
+</html>
+<div callback="unsubmit()"></div>
+<div callback="onloads()"></div>

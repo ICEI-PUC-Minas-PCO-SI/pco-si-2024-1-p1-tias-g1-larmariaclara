@@ -1,0 +1,32 @@
+.column-2 .item{
+    width: 49%;
+}
+
+.column-3 .item{
+    width: 32%;
+}
+
+.column-4 .item{
+    width: 24%;
+}
+
+.column-5 .item{
+    width: 19%;
+}
+
+.column-6 .item{
+    width: 15%;
+}
+
+[class^="column-"] {
+    flex-wrap: wrap;
+}
+
+[class^="column"] .item{
+    margin-bottom: 20px;
+} 
+
+[class^="column"] img,
+[class^="column"] video{
+    width: 100%;
+} 

@@ -1,0 +1,7 @@
+.mt-smart .item:not(:first-child){
+    margin-top: 5px;
+}
+
+.auto{
+    margin: auto;
+}

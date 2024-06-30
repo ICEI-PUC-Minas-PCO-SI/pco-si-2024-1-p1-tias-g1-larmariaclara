@@ -1,0 +1,40 @@
+#cards{
+    color: #eff0f1;
+}
+
+#cards .item{
+    border-radius: 4px;
+}
+
+#cards p,
+#cards .ac{
+    padding: 15px;
+}
+
+#cards .ac{
+    border-top: 1px solid #969798;
+    padding: 10px;
+    padding-left: 15px;
+}
+
+#cards .bg-blue .ac{
+    border-top: 1px solid #1a5cc1;
+}
+
+#cards .bg-yellow .ac{
+    border-top: 1px solid #e2a605;
+}
+
+#cards .bg-green .ac{
+    border-top: 1px solid #0f7745;
+}
+
+#cards .bg-red .ac{
+    border-top: 1px solid #c62635;
+}
+
+#cards a{
+    font-size: 0.9em;
+    border-bottom: 1px solid #eff0f1;
+    color: #eff0f1;
+}
